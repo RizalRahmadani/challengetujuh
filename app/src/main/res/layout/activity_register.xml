@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/pale_black"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.RegisterActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:textColor="@color/pale_black"
+        android:inputType="text"
+        android:background="@color/white"
+        android:layout_marginTop="100dp"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:hint="Username"
+        android:id="@+id/etUsername"/>
+    <EditText
+        android:textColor="@color/pale_black"
+        android:inputType="text"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:hint="Email"
+        android:id="@+id/etEmail"/>
+
+    <EditText
+        android:textColor="@color/pale_black"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:hint="Passsword"
+        android:inputType="textPassword"
+        android:id="@+id/etPassword"/>
+    <EditText
+        android:textColor="@color/pale_black"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:inputType="textPassword"
+        android:hint="Konfirmasi Password"
+        android:id="@+id/etKonfirmasiPass"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_marginTop="150dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:textColor="@color/pale_black"
+        android:text="Register"
+        android:backgroundTint="@color/white"/>
+
+</LinearLayout>
