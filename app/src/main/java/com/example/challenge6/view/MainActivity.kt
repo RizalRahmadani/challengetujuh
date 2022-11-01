@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.asLiveData
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.challenge6.R
 import com.example.challenge6.databinding.ActivityMainBinding
+import com.example.challenge6.datastore.LoginDataStore
 import com.example.challenge6.viewmodel.ViewModelCar
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -15,10 +17,15 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var  binding : ActivityMainBinding
     lateinit var carAdapter : CarAdapter
+    lateinit var dataLogin : LoginDataStore
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        dataLogin = LoginDataStore(this)
+        dataLogin.userName.asLiveData().observe(this,{
+            binding.tvUser.text = "Hello, "+ it.toString()
+        })
 
         setVmtoAdapter()
     }

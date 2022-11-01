@@ -11,5 +11,5 @@ interface RestfulApi {
     fun getAllCar(): Call<List<ResponseDataCarItem>>
 
     @GET("admin/car/{id}")
-    fun getDetailCar(@Path("id") id : Int): Call<List<ResponseDataCarItem>>
+    fun getDetailCar(@Path("id") id : Int): Call<ResponseDataCarItem>
 }

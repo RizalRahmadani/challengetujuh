@@ -2,6 +2,7 @@ package com.example.challenge6.model
 
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class ResponseDataCarItem(
     @SerializedName("category")
@@ -24,4 +25,4 @@ data class ResponseDataCarItem(
     val status: Boolean,
     @SerializedName("updatedAt")
     val updatedAt: String
-)
+): Serializable

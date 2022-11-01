@@ -14,15 +14,28 @@ import javax.inject.Inject
 class ViewModelCar @Inject constructor(var api : RestfulApi) : ViewModel(){
 
     lateinit var liveDataCar: MutableLiveData<List<ResponseDataCarItem>>
+    lateinit var detailDataCar: MutableLiveData<ResponseDataCarItem>
+//    lateinit var detailDataCar : MutableLiveData<List<ResponseDataCarItem>>
+
 
 
     init {
         liveDataCar = MutableLiveData()
+        detailDataCar = MutableLiveData()
+
+
     }
 
     fun getliveDataCar() : MutableLiveData<List<ResponseDataCarItem>> {
         return  liveDataCar
     }
+    fun getDetailCar(id : Int) : MutableLiveData<ResponseDataCarItem> {
+        return  detailDataCar
+    }
+
+
+
+
 
     fun callApiCar(){
         api.getAllCar().enqueue(object : Callback<List<ResponseDataCarItem>> {
@@ -43,5 +56,26 @@ class ViewModelCar @Inject constructor(var api : RestfulApi) : ViewModel(){
 
         })
     }
+    fun callDetailCar(id : Int){
+        api.getDetailCar(id)
+            .enqueue(object : Callback<ResponseDataCarItem> {
+                override fun onResponse(
+                    call: Call<ResponseDataCarItem>,
+                    response: Response<ResponseDataCarItem>
+                ) {
+                    if(response.isSuccessful){
+                        detailDataCar.postValue(response.body())
+                    }else{
+                        detailDataCar.postValue(null)
+                    }
+                }
+
+                override fun onFailure(call: Call<ResponseDataCarItem>, t: Throwable) {
+                    detailDataCar.postValue(null)
+                }
+
+            })
+    }
+
 
 }
