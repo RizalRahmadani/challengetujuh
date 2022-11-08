@@ -28,7 +28,7 @@
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:hint="Input Email"
-        android:id="@+id/etEmail"/>
+        android:id="@+id/edtEmailLogin"/>
     <EditText
         android:textColor="@color/pale_black"
         android:background="@color/white"
@@ -37,7 +37,7 @@
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:hint="Input Password"
-        android:id="@+id/etPassword"/>
+        android:id="@+id/edtPasswordLogin"/>
 
     <Button
         android:id="@+id/btnLogin"
@@ -48,7 +48,7 @@
         android:backgroundTint="@color/white"
         android:textColor="@color/pale_black"/>
     <TextView
-        android:id="@+id/tvRegis"
+        android:id="@+id/tv_to_register"
         android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

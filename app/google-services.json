@@ -1,0 +1,105 @@
+{
+  "project_info": {
+    "project_number": "553246227056",
+    "project_id": "cars-4141c",
+    "storage_bucket": "cars-4141c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553246227056:android:3dcac9bdaf6ec7c6f852b5",
+        "android_client_info": {
+          "package_name": "com.example.challenge6"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553246227056-t79gg86na7dph678u80od6njm156k6n6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.challenge6",
+            "certificate_hash": "e99f28be50d0309b120304b839f44649ef711c3b"
+          }
+        },
+        {
+          "client_id": "553246227056-lufhp9fj28kl2m12qion64t5sn4c59uv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB64gACrF69zj5r_x3Fkz2psJ-m5nBLnP8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "553246227056-lufhp9fj28kl2m12qion64t5sn4c59uv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553246227056:android:56c616df6e76d844f852b5",
+        "android_client_info": {
+          "package_name": "com.example.challenge6.challengeenam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553246227056-lufhp9fj28kl2m12qion64t5sn4c59uv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB64gACrF69zj5r_x3Fkz2psJ-m5nBLnP8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "553246227056-lufhp9fj28kl2m12qion64t5sn4c59uv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553246227056:android:56c616df6e76d844f852b5",
+        "android_client_info": {
+          "package_name": "com.example.challenge6.challengetujuh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553246227056-lufhp9fj28kl2m12qion64t5sn4c59uv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB64gACrF69zj5r_x3Fkz2psJ-m5nBLnP8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "553246227056-lufhp9fj28kl2m12qion64t5sn4c59uv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
